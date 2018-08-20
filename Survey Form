@@ -1,0 +1,104 @@
+<style>
+#title{
+color:red;
+}
+#description{
+color:brown;
+}
+body{
+color:blue;
+}
+#d{
+background-color:pink;
+}
+</style>
+<html>
+<body id="d">
+<h1 id="title">Survey Form</h1>
+<div id="form-outer">
+  <p id="description">
+   NKU's 2007 Book Connection Student Writing Art Contest
+  </p>
+  <form id="survey-form">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+ <div class="rowTab">
+      <div class="labels">
+        <label id="instructor-label" for="instructor">* Instructor: </label>
+      </div>
+      <div class="rightTab">
+        <input type="instructor" name="instructor" id="instructor" class="input-field" required placeholder="Enter your Instructor">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="contact number-label" for="contact number">* Contact Number: </label>
+      </div>
+      <div class="rightTab">
+        <input type="contact number" name="contact number" id="contact number" class="input-field" required placeholder="Enter your Contact Number">
+      </div>
+    </div>
+<div class="rowTab">
+      <div class="labels">
+        <label id="authorization-label" for="authorization">* Authorization: </label>
+      </div>
+      <div class="rightTab">
+        <input type="authorization" name="authorization" id="authorization" class="input-field" required placeholder="Enter your Authorization">
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Which option best describes your current role?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="essay">Essay</option>
+      <option value="creative writing">Creative Writing</option>
+      <option value="art">Art</option>
+      
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+    Survey Form  <div class="labels">
+        <label for="userRating">* How likely is that you would recommend NKU Book Connection Program to a friend?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
